@@ -1,22 +1,19 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.10
 import PackageDescription
 
 let package = Package(
-    name: "BetterSegmentedControl",
-    platforms: [
-        .iOS(.v9),
-    ],
-    products: [
-        .library(
-            name: "BetterSegmentedControl",
-            targets: ["BetterSegmentedControl"]
-        )
-    ],
-    targets: [
-        .target(
-            name: "BetterSegmentedControl",
-            path: "Pod/Classes"
-        )
-    ],
-    swiftLanguageVersions: [.v5]
+	name: "swift-segmented-control",
+	platforms: [
+		.iOS(.v16),
+	],
+	products: [
+		.library(
+			name: "SegmentedControl",
+			targets: ["SegmentedControl"]
+		),
+	],
+	targets: [
+		.target(name: "SegmentedControl"),
+	],
+	swiftLanguageVersions: [.v5]
 )
